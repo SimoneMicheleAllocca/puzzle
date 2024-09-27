@@ -1,0 +1,72 @@
+body {
+    background-image: url('img/background.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    color: #680098;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+    padding: 20px;
+    max-width: 500px;
+    margin: auto;
+}
+
+#puzzle-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+    position: relative;
+}
+
+.piece {
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    cursor: pointer;
+    width: 25%;
+    padding-top: 25%;
+    background-size: 400px 400px;
+    transition: background-color 0.3s;
+}
+
+.empty {
+    background-color: transparent;
+}
+
+.selected {
+    border: solid 5px rgba(255, 0, 255, 0.5);
+    background-color: rgba(255, 0, 255, 0.5);
+}
+
+.btn {
+    background-color: pink;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#shuffle-button:hover {
+    background-color: fuchsia;
+}
+
+#complete-button:hover {
+    background-color: rgb(143, 1, 143);
+}
+
+#status {
+    font-size: 24px;
+    color: green;
+    margin-top: 20px;
+}
+
+h1 {
+    text-shadow: 2px 2px 0 rgba(255, 0, 255, 0.7), 
+                 4px 4px 0 rgba(255, 0, 255, 0.5), 
+                 6px 6px 0 rgba(255, 0, 255, 0.3);
+    font-size: 3rem;
+}
